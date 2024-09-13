@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, rgb(57, 48, 66), rgb(42, 35, 104), rgb(138, 97, 235));
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-container {
+    
+    padding: 50px;
+}
+
+.main-heading {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.h_1{
+    text-align: center;
+}
+.orein{
+    text-align: left;
+}
+.highlight {
+    color: #f5a623; /* Highlight color for 'your plan' */
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+/* Plan Styles */
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Hover Effect for the Plan Cards */
+.plan {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    width: 270px;
+    height: 460px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    backdrop-filter: blur(10px); /* Apply blur effect to background content */
+    -webkit-backdrop-filter: blur(10px); /* Support for WebKit browsers */
+}
+
+.plan:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Increase shadow to give a floating effect */
+    background: rgba(255, 255, 255, 0.15); /* Slightly change background transparency */
+}
+
+/* Hover Effect for Buttons */
+.btn {
+   
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 240px;
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+.color-1{
+    background-color: transparent;
+    border: solid 2px white;
+}
+.color-1:hover{
+    background-color: #32d296;
+}
+.color-2{
+    background-color: transparent;
+    border: solid 2px white;
+}
+.color-2:hover{
+    background-color: #f4f42f;
+}
+.color-3{
+    background-color: transparent;
+    border: solid 2px white;
+}
+.color-3:hover{
+    background-color: #ff5f57;
+}
+
+
+/* Plan-specific Colors */
+.basic {
+    border: 2px solid #32d296;
+   
+}
+
+.premium {
+    border: 2px solid #f4f42f;
+}
+
+.enterprise {
+    border: 2px solid #ff5f57;
+}
+
+/* Smooth Transition for Price Text */
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+}
+.p1:hover{
+      color: #32d296;
+}
+.p2:hover{
+    color:#f4f42f;
+}
+.p3:hover{
+    color: #ff5f57;
+}
+.space {
+    list-style: none; /* Remove default bullets */
+    padding: 10px;
+    margin: 10px;
+}
+
+.space li {
+    position: relative;
+    padding: 10px 7px; /* Add space between each line */
+    border-bottom: 1px solid #ddd; /* Thin horizontal line */
+    font-size: 1.1rem; /* Adjust text size */
+}
+
+.space li:last-child {
+    border-bottom: none; /* Remove line after the last item */
+}
+
+/* Adding right checkmark inside a solid circle */
+.space-1 li::before {
+    content: "✔"; /* Unicode for checkmark (✔) */
+    color: white;
+    background-color: #32d296; /* Solid circle color */
+    border-radius: 50%; /* Makes the background a circle */
+    display: inline-block;
+    width: 20px; /* Width of the circle */
+    height: 20px; /* Height of the circle */
+    line-height: 20px; /* Vertically center the checkmark */
+    text-align: center; /* Horizontally center the checkmark */
+    position: absolute;
+    left: -20px; /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 14px; /* Adjust font size of the checkmark */
+}
+/* Adding right checkmark inside a solid circle */
+.space-2 li::before {
+    content: "✔"; /* Unicode for checkmark (✔) */
+    color: white;
+    background-color: #f4f42f; /* Solid circle color */
+    border-radius: 50%; /* Makes the background a circle */
+    display: inline-block;
+    width: 20px; /* Width of the circle */
+    height: 20px; /* Height of the circle */
+    line-height: 20px; /* Vertically center the checkmark */
+    text-align: center; /* Horizontally center the checkmark */
+    position: absolute;
+    left: -20px; /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 14px; /* Adjust font size of the checkmark */
+}
+/* Adding right checkmark inside a solid circle */
+.space-3 li::before {
+    content: "✔"; /* Unicode for checkmark (✔) */
+    color: white;
+    background-color: #ff5f57; /* Solid circle color */
+    border-radius: 50%; /* Makes the background a circle */
+    display: inline-block;
+    width: 20px; /* Width of the circle */
+    height: 20px; /* Height of the circle */
+    line-height: 20px; /* Vertically center the checkmark */
+    text-align: center; /* Horizontally center the checkmark */
+    position: absolute;
+    left: -20px; /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 14px; /* Adjust font size of the checkmark */
+}
+/* Responsive Styles */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .sub-heading {
+        font-size: 1.25rem;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center; /* Center align cards */
+    }
+
+    .plan {
+        width: 90%;
+        max-width: 350px; /* Adjust max width of the cards */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .btn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .space li {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center; /* Center align cards */
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%; /* Full width on mobile */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .btn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .space li {
+        font-size: 0.9rem;
+    }
+}
